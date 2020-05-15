@@ -42,6 +42,7 @@ fn parse_query(input: &str) -> IResult<&str, Query> {
         stream_name: sn,
         events: evts.iter().map(|s| s.to_string()).collect(),
     };
+
     Ok((r5, q))
 }
 
